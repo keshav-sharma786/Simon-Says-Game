@@ -96,6 +96,7 @@ function checkSeq() {
             // i want levelUp() function and flashButton() function will be called after the delay of 1 second
             isMatching = false; // if any sequence does'not match call the gameOver function
             gameOver();
+            return; // stop the function as the sequence is incorrect
         }
     }
     // if the entire sequence matches, move to the next level.
@@ -109,9 +110,7 @@ function checkSeq() {
             // }, 1000);
             // clear user sequence for the next level
             userSeq = [];
-        } else {
-            gameOver();
-        }
+        } 
     }
     // making function gameOver()
 
@@ -130,6 +129,7 @@ function checkSeq() {
         gameSeq = [];
         userSeq = [];
         level = 0;
+        highScore = 0;
         started = false;
     }
     
