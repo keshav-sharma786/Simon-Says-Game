@@ -3,6 +3,7 @@
 let gameSeq = [];
 let userSeq = [];
 let highScore = 0;
+let button = document.querySelector("#button");
 
 let btn1 = document.querySelector(".yellow");
 let btn2 = document.querySelector(".red");
@@ -132,5 +133,9 @@ function checkSeq() {
         highScore = 0;
         started = false;
     }
+
+    // button.addEventListener("click", () => {
+    //     body.style.backgroundColor = "gold";
+    // });
     
 

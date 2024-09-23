@@ -8,7 +8,8 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    background-color: wheat;
+    
+    background-color: gold;
 }
 
 .container {
@@ -63,6 +64,15 @@ body {
     background-color: red;
 }
 
+#button {
+    height: 3rem;
+    width: 9rem;
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
 /* @media screen and (min-width: 375px) {
     .container {
         height: 300px;
